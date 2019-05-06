@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Address</title>
+</head>
+<body>
+    <script>
+    let streetNumber = ['223', '662', '432', '27', '32']
+    let streetName = ['May street', 'My street', 'Metro street', 'Jay street', 'Key street']
+    let cityName = ['New York', 'Los Angeles', 'Chicago', 'Washington', 'San Francisco']
+    let stateName = ['California', 'Texas', 'Florida', 'Pennsylvania', 'Michigan']
+    let zipCode = ['28889', '96459', '35748', '15005', '99625']
+function getRandom(address) {
+    return address [Math.floor((Math.random() * address.length))];
+}
+function createAdress() {
+    return `${getRandom(streetNumber)} ${getRandom(streetName)} ${getRandom(cityName)} ${getRandom(stateName)} ${getRandom(zipCode)}`;
+}
+let address = createAdress();
+console.log(address);
+
+    </script>
+</body>
+</html>
